@@ -1,0 +1,20 @@
+GET http://localhost:8080/products
+
+###
+
+POST http://localhost:8080/products/addProduct
+Content-Type: "application/json"
+
+{"product":{
+    "numOfProd": 2
+}}
+
+
+###
+PUT http://localhost:8080/products/updateProduct
+
+
+
+###
+
+DELETE http://localhost:8080/products/deleteProduct/6388e351f63fb47f6ad7a4d0
