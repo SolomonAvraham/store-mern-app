@@ -1,12 +1,11 @@
-GET http://localhost:8080/products
-
+GET http://localhost:8080/orders
 ###
 
-POST http://localhost:8080/products/addProduct
+POST http://localhost:8080/infoPage/addProduct
 Content-Type: "application/json"
 
-{"product":{
-    "numOfProd": 2
+{"infoPage":{
+    "numOfProd": 7
 }}
 
 
