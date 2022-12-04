@@ -1,32 +1,7 @@
-/* body {
-  background-color: rgb(130, 42, 42);
-} */
-
-.firstDiv {
-  height: 30vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgb(178, 178, 178);
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  background-color: #ececec;
 }
 
 .cardBody {
-  background-color: rgba(255, 255, 255, 0.428);
-  width: 15vw;
-
-  border: 1px solid rgba(0, 0, 0, 0.269);
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-}
-
-.display{
- 
-
+  background-color: rgba(255, 255, 252, 255);
 }
