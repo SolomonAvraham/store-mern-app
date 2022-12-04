@@ -1,15 +1,16 @@
 import "./App.css";
-import { useEffect, useState } from "react";
-import { products } from "./server/products-server";
+import DataProvider from "./componnents/useContext/dataContext";
+import FirstSection from "./componnents/pages/firstSection";
+import Header from "./componnents/features/header";
 function App() {
-  const [test, setTest] = useState([]);
-
-
-console.log(test);
+  console.log();
   return (
-    <div className="App">
-      <h1>{test}</h1>
-    </div>
+    <DataProvider>
+      <div className="App">
+        <Header />
+        <FirstSection />
+      </div>
+    </DataProvider>
   );
 }
 
