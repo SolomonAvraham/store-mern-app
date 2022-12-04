@@ -9,6 +9,7 @@ const order = new Scheme({
   supplyTime: { type: String, require: true },
   numOfProducts: { type: Number, require: true },
   price: { type: Number, require: true },
+  id: { type: Number, require: true },
 });
 
 module.exports = mongoose.model("order", order);

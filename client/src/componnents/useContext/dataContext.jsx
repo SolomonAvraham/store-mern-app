@@ -18,7 +18,7 @@ export function useData() {
 export default function DataProvider({ children }) {
   const [categoryState, setCategoryState] = useState(null);
   const [infoPageState, setInfoPageState] = useState(null);
-  const [ordersState, setOrdersState] = useState(null);
+  const [ordersState, setOrdersState] = useState([]);
   const [productsState, setProductsState] = useState(null);
   const [sectionsState, setSectionsState] = useState(null);
   const [storesState, setStoresState] = useState(null);
