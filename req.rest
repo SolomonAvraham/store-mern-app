@@ -1,0 +1,19 @@
+GET http://localhost:8080/orders
+###
+
+POST http://localhost:8080/infoPage/addProduct
+Content-Type: "application/json"
+
+{"infoPage":{
+    "numOfProd": 7
+}}
+
+
+###
+PUT http://localhost:8080/products/updateProduct
+
+
+
+###
+
+DELETE http://localhost:8080/products/deleteProduct/6388e351f63fb47f6ad7a4d0
