@@ -8,20 +8,20 @@ import ThirdSection from "./componnents/pages/thirdSection/thirdSection";
 function App() {
   return (
     <DataProvider>
-      <div className="App">
-        <Header />
+      <div className=" ">
+      <Header />
         <FirstSection />
-        <div className=" text-center font-light mt-12  ">
+        <div className=" text-center font-light mt-5 ">
           <p className=" mb-1  ">
             Orders in the past <span className=" font-medium">7</span> days
           </p>
         </div>
-        <div className="secSection  container h-96  mx-auto shadow ">
-          <div className=" w-full h-96 container flex justify-center">
+        <div className="secSection  container h-36  mx-auto shadow md:h-72 ">
+          <div   className="flex justify-center md:h-96">
             <ChartSection />
           </div>
         </div>
-        <div className=" mt-12 mb-12 container  mx-auto  ">
+        <div className="  mt-5 mb-12 container mx-auto    ">
           <ThirdSection />
         </div>
       </div>

@@ -39,7 +39,7 @@ export default function ThirdSection() {
       <div className=" text-center mt-12 font-light ">
         Order in the last <span className=" font-medium">30</span> days
         <div className=" secSection h-72 w-fit shadow mt-1  flex p-5">
-          <table>
+          <table className=" overflow-scroll">
             <thead>
               <tr className=" font-light shadow">
                 <td>Order no.</td>
@@ -65,7 +65,7 @@ export default function ThirdSection() {
             
               {ordersState.map((item, index) => {
                 return (
-                  <tr key={index}>
+                  <tr className="bg-none even:bg-gray" key={index}>
                     <td key={item.id}>{item.numOfOrder}</td>
                     <td key={item.id}>{item.name}</td>
                     <td key={item.id}>{item.address}</td>

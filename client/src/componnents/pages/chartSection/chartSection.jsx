@@ -27,16 +27,17 @@ export const options = {
   responsive: true,
   plugins: {
     legend: {
-      position: "top",
+      position: "bottom",
+      
     },
     title: {
       display: true,
     },
   },
 };
-
+ 
 const labels = ["January", "February", "March", "April", "May", "June", "July"];
-const numArray = [0, 10, 20, 30, 40];
+const numArray = [12, 12, 10, 10, 10,9,12];
 export const data = {
   labels,
   datasets: [
@@ -53,7 +54,7 @@ export const data = {
 export default function ChartSection() {
   return (
     <>
-      <Line options={options} data={data} />
+      <Line width={600} options={options} data={data} />
     </>
   );
 }

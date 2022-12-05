@@ -1,6 +1,6 @@
 export const products = async () => {
-  const response = await fetch("http://localhost:8080/products").then((res) =>
-    res.json()
-  );
+  const response = await fetch(
+    "https://us-west-2.aws.data.mongodb-api.com/app/store-mern-hznxv/endpoint/products"
+  ).then((res) => res.json());
   return response;
 };
