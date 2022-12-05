@@ -2,10 +2,11 @@ import React from "react";
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { useData } from "../../useContext/dataContext";
+import ReactLoading from "react-loading";
 
 export default function ThirdSection() {
-  const { ordersState } = useData();
-console.log(ordersState.id);
+  const { ordersState, sectionsState } = useData();
+
   return (
     <div className="grid justify-items-stretch md:flex justify-between ">
       <div className=" text-center mt-12 font-light ">
@@ -50,7 +51,18 @@ console.log(ordersState.id);
               </tr>
             </thead>
 
-            <tbody className=" font-thin text-sm">
+                      <tbody className=" font-thin text-sm">
+                          <div className=" flex justify-center align-middle">
+                             {!sectionsState && (
+                <ReactLoading
+                  type={"spin"}
+                  color={"gray"}
+                  height={"20%"}
+                  width={"20%"}
+                />
+              )}   
+                          </div>
+            
               {ordersState.map((item, index) => {
                 return (
                   <tr key={index}>

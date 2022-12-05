@@ -36,24 +36,24 @@ export const options = {
 };
 
 const labels = ["January", "February", "March", "April", "May", "June", "July"];
-const numArray = [0, 1, 2, 3, 4, 5, 6];
+const numArray = [0, 10, 20, 30, 40];
 export const data = {
   labels,
   datasets: [
     {
       fill: true,
-      label: " ",
+      label: "",
       data: numArray.map((item) => item),
-      //   borderColor: 'rgb(53, 162, 235)',
-      backgroundColor: "rgba(53, 162, 235, 0.5)",
+      borderColor: "#1a9da6",
+      backgroundColor: "rgba(236, 236, 236, 0.6)",
     },
   ],
 };
 
 export default function ChartSection() {
   return (
-    <div className=" flex justify-center h-72 ">
+    <>
       <Line options={options} data={data} />
-    </div>
+    </>
   );
 }

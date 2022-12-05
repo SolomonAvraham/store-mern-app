@@ -16,10 +16,12 @@ function App() {
             Orders in the past <span className=" font-medium">7</span> days
           </p>
         </div>
-        <div className="secSection  container h-80  mx-auto shadow ">
-          <ChartSection />
+        <div className="secSection  container h-96  mx-auto shadow ">
+          <div className=" w-full h-96 container flex justify-center">
+            <ChartSection />
+          </div>
         </div>
-        <div className=" mt-12 mb-40 container  mx-auto  ">
+        <div className=" mt-12 mb-12 container  mx-auto  ">
           <ThirdSection />
         </div>
       </div>
