@@ -17,7 +17,7 @@ function App() {
           </p>
         </div>
         <div className="secSection  container h-36  mx-auto shadow md:h-72 ">
-          <div   className="flex justify-center md:h-96">
+          <div className="flex justify-center md:h-96">
             <ChartSection />
           </div>
         </div>
