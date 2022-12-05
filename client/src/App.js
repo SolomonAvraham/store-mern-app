@@ -8,8 +8,8 @@ import ThirdSection from "./componnents/pages/thirdSection/thirdSection";
 function App() {
   return (
     <DataProvider>
-      <div className=" ">
       <Header />
+      <div className=" ">
         <FirstSection />
         <div className=" text-center font-light mt-5 ">
           <p className=" mb-1  ">
